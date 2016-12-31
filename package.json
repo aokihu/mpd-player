@@ -1,0 +1,30 @@
+{
+  "name": "mpd-player",
+  "version": "1.0.0",
+  "description": "MPD player",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aokihu/mpd-player.git"
+  },
+  "keywords": [
+    "mpd",
+    "mpc",
+    "player",
+    "mp3",
+    "audio"
+  ],
+  "author": "aokihu",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/aokihu/mpd-player/issues"
+  },
+  "homepage": "https://github.com/aokihu/mpd-player#readme",
+  "dependencies": {
+    "bluebird": "^3.4.7",
+    "mpd": "^1.3.0"
+  }
+}
