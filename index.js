@@ -66,7 +66,7 @@ module.exports = class MPDPlayer {
 
   stop(clear=true){
 
-    return new new Promise((resolve, reject)=>{
+    return new Promise((resolve, reject)=>{
       this.client.sendCommand(cmd('stop',[]), (err, msg) => {
 
         if(err) reject(err)
@@ -88,6 +88,17 @@ module.exports = class MPDPlayer {
 
   pause() {
 
+    return new Promise((resolve, reject) => {
+
+      this.client.sendCommand(cmd('pause',[]), (err, msg) => {
+
+        if(err) reject(err)
+
+        resolve()
+
+      })
+
+    });
 
 
   }
